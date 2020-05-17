@@ -6,7 +6,7 @@ with open('washington.csv') as f:
     y=0
     for row in csv_r:
       #x is the variable that concatenates and actually gets the values for our VCARD
-      #modify ist to fit your csv ---- look at csvs and how they hold data
+      #modify ist to fit your csv ---- look at vcfs and how they hold data
       x="BEGIN:VCARD\n"+"VERSION:2.1\n"+"N:;{}".format(row[4])+";;;\n"+"FN:{}\n".format(row[4]) +"EMAIL;HOME:noelannane@gmail.com\n"+"END:VCARD\n"
       print(x)
       #this actually creates the vcf with name cs_f.vcf
